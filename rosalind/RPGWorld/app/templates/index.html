@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Hi, {{user.nickname}}!</h1>
+<h1>Дневник</h1>
+{% for post in posts %}
+<div><p>{{post}}</p></div>
+<hr>
+{% endfor %}
+{% endblock %}
+
+{% block content_2 %}
+<h1>Дневник Тренировок</h1>
+{% for post in posts2 %}
+<div><p>{{post}}</p></div>
+<hr>
+{% endfor %}
+{% endblock %}
+
+{% block content_3 %}
+<h1>Дневник Рабочий</h1>
+{% for post in posts3 %}
+<div><p>{{post}}</p></div>
+<hr>
+{% endfor %}
+{% endblock %}
